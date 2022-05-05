@@ -1,0 +1,59 @@
+\documentclass[11pt]{article}
+
+\input{latex/packages.tex}
+\input{latex/commands.tex}
+
+% Toggle commenting to disallow/allow line numbers.
+% \linenumbers
+
+\begin{document}
+
+\title{\textbf{Title goes here}}
+
+\date{\today}
+
+% Author List
+\begin{center}
+% name\,\orcidlink{0000-XXXX-XXXX-XXXX}\textsuperscript{1},
+First~Author\,\textsuperscript{1},
+Second~Author\,\textsuperscript{2},
+\end{center}
+
+% Affiliations
+\begin{center}
+\textbf{1}~Great University, USA
+\textbf{2}~Nice National Laboratory, Germany
+\end{center}
+
+\begin{abstract}
+\noindent Abstract goes here.
+\end{abstract}
+
+% \clearpage
+% \tableofcontents
+% \clearpage
+
+\section{Introduction}
+
+Hi.~\cite{LHCReinterpretationForum:2020xtr}
+
+\section{Conclusions}
+
+Conclusions go here.
+
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+% sort alphabetically by author names:
+Kyle Cranmer, Matthew Feickert, and Mark Neubauer are supported in part by the National Science Foundation under Cooperative Agreement OAC-1836650.
+
+\def\thefootnote{\fnsymbol{footnote}}
+\setcounter{footnote}{0}
+
+% Bibliography
+\clearpage
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{JHEP}
+\bibliography{bib/references}
+
+\end{document}
