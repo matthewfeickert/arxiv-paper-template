@@ -1,3 +1,6 @@
 {
-    "project_name": "research-paper"
+    "project_name": "research-paper",
+    "_copy_without_render": [
+        "*.bst"
+    ]
 }
