@@ -1,0 +1,34 @@
+\usepackage[utf8]{inputenc}
+\usepackage{cite}  % in text chain sequential citations in bibliography with a dash
+\usepackage{graphicx}
+\usepackage[margin=1.25in]{geometry}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{url}
+% For arXiv submission to work also need a 00README.XXX
+% https://arxiv.org/help/00README
+\usepackage[breaklinks,
+    colorlinks=true,
+    urlcolor=blue,
+    anchorcolor=blue,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    menucolor=blue,
+    linktocpage=true,
+    pdfproducer=medialab,
+    pdfa=true
+]{hyperref}
+\usepackage{xspace}
+\usepackage{orcidlink}
+\usepackage{lineno}
+\usepackage{todonotes}
+\usepackage[toc]{glossaries}
+\usepackage[capitalize]{cleveref}% https://ctan.org/pkg/cleveref % Must be loaded after hyperref and amsmath
+% arXiv AutoTeX doesn't like \cref for sections
+% Section -> Sec.
+% \crefname{section}{Sec.}{Sec.}
+% \Crefname{section}{Sec.}{Sec.}
+\usepackage[page,title,toc]{appendix}
+\usepackage{breakurl}
